@@ -18,40 +18,4 @@
 
 	</dependencies>
 
-	<build>
-		<directory>target</directory>
-		<outputDirectory>target/classes</outputDirectory>
-		<finalName>${artifactId}-${version}</finalName>
-		<testOutputDirectory>target/test-classes</testOutputDirectory>
-		<sourceDirectory>src/main/java</sourceDirectory>
-		<scriptSourceDirectory>src/main/scripts</scriptSourceDirectory>
-		<testSourceDirectory>src/test/java</testSourceDirectory>
-		<resources>
-			<resource>
-				<directory>src/main/resources</directory>
-			</resource>
-		</resources>
-		<testResources>
-			<testResource>
-				<directory>src/test/resources</directory>
-			</testResource>
-		</testResources>
-
-		<plugins>
-			<plugin>
-				<inherited>true</inherited>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-source-plugin</artifactId>
-
-				<executions>
-					<execution>
-						<id>attach-sources</id>
-						<goals>
-							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
 </project>
